@@ -1,0 +1,101 @@
+.header {
+  height: 78px;
+  background: #76C7C0 url("/images/Path.png") no-repeat bottom;
+
+  .container .row {
+    width: 100%;
+    h1 {
+      font-weight: 700;
+      font-size: 30px;
+      margin: 0;
+      span {
+        font-size: 25px;
+        font-weight: 400;
+        font-family: 'Open Sans';
+        margin-left: -5px;
+      }
+    }
+
+    .menu ul{
+      display: -webkit-inline-box;;
+      padding: 0;
+      margin: 0;
+
+      li {
+        text-transform: uppercase;
+        border-radius: 5px;
+        margin: 0 10px 0 4px;
+        cursor: pointer;
+
+        &.active{
+          background: #62a29e;
+          border-bottom: 3px solid #538B86;
+        }
+
+        &:hover {
+          background: #e8645a;
+          border-bottom: 3px solid #E2534B;
+        }
+
+        a{
+          color: white;
+          font-size: 14px;
+          font-weight: 500;
+          padding: 4px 13px;
+          list-style-type: none;
+
+        }
+      }
+
+      .nav-item{
+        #navbarDropdown{
+          img{
+            transform: rotate(90deg);
+            margin-top: -1px;
+          }
+        }
+
+        .dropdown-menu{
+          margin-top: 12px;
+          position: absolute;
+          background-color:#E2534B;
+          border-radius: 5px;
+          padding: 0 5px;
+
+          &::before{
+            display: inline-block;
+            margin-left: 0.8em;
+            vertical-align: .255em;
+            content: "";
+            border-right: .5em solid transparent;
+            border-bottom: 0.5em solid;
+            border-left: .5em solid transparent;
+            transform: translateY(-14px);
+            color: #E2534B;
+          }
+
+          .dropdown-item{
+            padding: 7px 10px;
+            background: #e8645a;
+            border-radius: 5px;
+            text-transform: initial;
+            font-size: 13px;
+            font-weight: 600;
+            margin: 5px 0;
+
+            &:hover{
+              background: #76C7C0;
+            }
+
+            img{
+              margin-right: 5px;
+              margin-top: -1px;
+            }
+          }
+        }
+
+      }
+
+    }
+  }
+}
